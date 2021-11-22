@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <title>HTML</title>
     <style>
+      body{
+        font-size: 16px;
+      }
       h1{
-        fonte-size: 65px;
+        font-size: 65px;
         color: orange;
+        font-family: sans-serif;
       }
       .paragrafo_e_lista{
         background-color: purple;
@@ -14,15 +18,29 @@
     .listanaoordenada{
         background-color: palegreen;
       }
+      .paragrafo{
+        font-weight: 600;
+        font-size: 300%;
+        font-style: italic;
+        line-height: 400%;
+        text-align: center;
+        text-decoration: underline;
+      }
+      #amarelo{
+        background-color: yellow;
+      }
+      #vermelho{
+        background-color: red;
+      }
     </style>
   </head>
   <body>
     <h1>Exercícios 3.2</h1>
-    <p class="paragrafo_e_lista">Qual é a sua cor favorita?</p>
+    <p class="paragrafo paragrafo_e_lista">Qual é a sua cor favorita?</p>
     <ul class="listanaoordenada paragrafo_e_lista">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+      <li id="amarelo">Amarelo</li>
+      <li id="vermelho">Vermelho</li>
+      <li style="background-color: brown;">Marrom</li>
     </ul>
   </body>
 </html>
