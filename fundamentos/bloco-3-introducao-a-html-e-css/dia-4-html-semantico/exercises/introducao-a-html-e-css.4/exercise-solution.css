@@ -1,0 +1,19 @@
+/*
+body{
+    width: 90%;
+}
+*/
+img{
+    width: 50%;
+}
+#figura1{
+    float: left;
+    width: 22%;
+    margin-right: 1%;
+}
+
+#sobre{
+    padding: 10px;
+    text-align: center;
+  }
+  
