@@ -1,0 +1,19 @@
+h1, p{
+  text-align: center;
+}
+
+ol:hover{
+background-color: blue;
+}
+
+#betrybe:active{
+  font-family: fantasy;
+}#google:active{
+  font-family: monospace;
+}#github:active{
+  font-family: cursive;
+}
+
+ol, ul{
+  list-style: none;
+}
