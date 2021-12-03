@@ -83,8 +83,8 @@
 
         function paragrafosMaiusculos(){
             for(let paragrafo of document.getElementsByTagName('p'))
-                //paragrafo.text-transform='uppercase';
-                paragrafo.innerText=paragrafo.innerText.toUpperCase();
+                paragrafo.style.textTransform='uppercase';
+                //paragrafo.innerText=paragrafo.innerText.toUpperCase();
         }
         paragrafosMaiusculos();
 
