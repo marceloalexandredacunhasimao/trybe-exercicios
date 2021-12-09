@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página</title>
+    <style>
+        .todos_os_botoes_container{
+            border: 5px red solid;
+            align-items: center;
+        }
+        .botao_container{
+            display: inline-block;
+            border: 1px blue solid;
+            margin: 20px;
+        }
+        button{
+            display: block;
+        }
+    </style>
+    <script>
+        function restaura_cor_de_fundo()
+        {
+            cor=localStorage.getItem('cor_de_fundo20211208');
+            if(cor)document.body.style.backgroundColor=cor;
+        }
+        function restaura_cor_da_fonte()
+        {
+            cor=localStorage.getItem('cor_da_fonte20211208');
+            if(cor)
+                for(paragrafo of document.getElementsByTagName('p'))
+                    paragrafo.style.color=cor;
+        }
+        function mudado_cor_de_fundo(cor)
+        {
+            document.body.style.backgroundColor=cor;
+            localStorage.setItem('cor_de_fundo20211208',cor);
+        }
+        function mudado_cor_da_fonte(cor)
+        {
+            for(paragrafo of document.getElementsByTagName('p'))paragrafo.style.color=cor;
+            localStorage.setItem('cor_da_fonte20211208',cor);
+        }
+
+        function botao_acionado(event)
+        {
+            switch(event.target.id)
+            {
+                case 'button_cor_de_fundo_preto':mudado_cor_de_fundo('black');break;
+                case 'button_cor_de_fundo_branco':mudado_cor_de_fundo('white');break;
+                case 'button_cor_da_fonte_preto':mudado_cor_da_fonte('black');break;
+                case 'button_cor_da_fonte_branco':mudado_cor_da_fonte('white');break;
+            };
+        }
+       
+        function iniciar()
+        {
+            restaura_cor_de_fundo();
+            restaura_cor_da_fonte();
+            for(botao of document.getElementsByTagName('button'))
+                botao.addEventListener('click',botao_acionado);
+        }
+        window.onload=iniciar;
+    </script>
+</head>
+<body>
+    <div class="todos_os_botoes_container">
+        <div class='botao_container cor_de_fundo'>
+            <span>Cor de fundo</span>
+            <br>
+            <button id='button_cor_de_fundo_preto'>Preto</button>
+            <button id='button_cor_de_fundo_branco'>Branco</button>
+        </div>
+        <div class='botao_container cor_da_fonte'>
+            <span>Cor da fonte</span>
+            <br>
+            <button id='button_cor_da_fonte_preto'>Preto</button>
+            <button id='button_cor_da_fonte_branco'>Branco</button>
+        </div>
+    </div>
+    <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet tellus purus. Sed blandit nec duit eu lacinia. Vestibulum tincidunt hendrerit turpis, vitae hendrerit ipsum mollis at. Nulla a leo purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ac tellus at ante ullamcorper finibus. Sed efficitur risus sit amet diam fringilla sagittis. Mauris enim elit, sagittis tincidunt arcu id, efficitur blandit magna. Sed ac aliquam ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse lobortis aliquam lacus sit amet consectetur. Nulla neque lectus, venenatis bibendum tortor sed, rhoncus consectetur mauris. Phasellus ac aliquet massa. Donec vitae odio et mauris vehicula euismod. Vivamus tempor justo sit amet ornare fermentum.</p>
+        <p>Proin imperdiet velit enim, eget vestibulum urna commodo non. Cras tincidunt nisl in venenatis maximus. Donec sit amet sem at quam suscipit pharetra. Integer feugiat id nunc volutpat laoreet. Donec ornare sodales ipsum. Nam efficitur est felis, vitae tempor lorem porttitor eget. Vestibulum eu nisl vitae nulla iaculis tempus sit amet et dui. Phasellus eget erat id nibh pulvinar sodales. Praesent fermentum erat at mauris feugiat semper. In congue nisi ut dignissim mattis. Cras fringilla a ante a dapibus. Nulla fringilla dolor vel massa lobortis fringilla.</p>
+        <p>Vestibulum blandit, diam at lacinia hendrerit, augue velit varius turpis, at imperdiet lacus tellus vel felis. Quisque velit magna, faucibus sit amet sem consequat, fermentum ultrices lorem. Integer vestibulum purus vel tincidunt mattis. Suspendisse lacinia sodales nibh. In hac habitasse platea dictumst. Curabitur at cursus lectus, sit amet vestibulum dolor. Mauris ultricies lacus quis arcu faucibus varius. Nulla venenatis neque sed nisl consequat lobortis. Praesent pretium rhoncus tellus a pellentesque. In et tincidunt odio. Praesent pulvinar dapibus mi, in dapibus lacus rhoncus eget. Nam laoreet metus nibh, sit amet semper mi lacinia id.</p>
+    </article>
+    </article>
+</body>
+</html>
