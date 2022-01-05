@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form id="cv-form" method="get">
+		<div class="linha-do-formulario">
+			<fieldset>
+				<div class="linha">
+					<label for="input-nome">Nome:</label>
+					<input type="text" maxlength="40" required name="nome" id="input-nome">
+				</div>
+				<div class="linha">
+					<label for="input-email">E-mail:</label>
+					<input type="email" maxlength="50" required name="email" id="input-email">
+				</div>
+				<div class="linha">
+					<label for="input-cpf">CPF:</label>
+					<input type="text" maxlength="11" required name="cpf" id="input-cpf">
+				</div>
+				<div class="linha">
+					<label for="input-endereco">Endereço:</label>
+					<input type="text" maxlength="200" required name="endereco" id="input-endereco">
+				</div>
+				<div class="linha">
+					<label for="input-cidade">Cidade:</label>
+					<input type="text" maxlength="28" required name="cidade" id="input-cidade">
+				</div>
+				<div class="linha">
+					<label for="select-estado">Estado:</label>
+					<select name="estado" required id="select-estado">
+						<option disabled selected value>Selecione seu estado</option>
+					</select>
+				</div>
+				<div class="linha">
+					<span>Tido de imóvel:</span>
+					<input type="radio" name="TipoDeLar" value="casa" id="radio-casa">
+					<label for="radio-casa">Casa</label>
+					<input type="radio" name="TipoDeLar" value="apartamento" id="radio-apartamento">
+					<label for="radio-apartamento">Apartamento</label>
+				</div>
+				<!--
+				<div class="linha">
+					<label for="houseType">Tipo de imóvel: </label>
+					<input type="radio" name="houseType" id="house" value="house" required>
+					<span>Casa</span>
+					<input type="radio" name="houseType" id="apartment" value="apartment" required>
+					<span>Apartamento</span>
+				</div>
+			-->
+			</fieldset>
+			<fieldset>
+				<div class="linha">
+					<label for="ultimo-emprego"><div>Dados do último emprego:</div></label>
+					<textarea name="ultimo-emprego" id="ultimo-emprego" required cols="50" rows="20" maxlength="1000"></textarea>
+				</div>
+				<div class="linha">
+					<label for="cargo">Cargo: </label>
+					<input type="text" name="cargo" id="cargo" maxlength="40" required>
+				</div>
+				<div class="linha">
+					<label for="descricaoDoCargo">Descrição do cargo:</label>
+					<input type="text" name="descricaoDoCargo" id="descricaoDoCargo" maxlength="50" required>
+				</div>
+				<div class="linha">
+					<label for="dataDeInicio">Data de início:</label>
+					<input type="text" placeholder="dd/mm/yyyy" name="dataDeInicio" id="dataDeInicio" required>
+					<!-- min="2022-01-04" max="3000-01-07" -->
+				</div>
+			</fieldset>
+			<div class="linha">
+				<button class="submit-button" type="submit">Enviar</button>
+        		<button class="clear-button" type="reset">Limpar</button>
+			</div>
+
+		</div>
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>
