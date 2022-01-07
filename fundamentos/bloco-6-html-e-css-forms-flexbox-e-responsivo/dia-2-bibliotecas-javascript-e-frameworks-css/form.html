@@ -11,10 +11,13 @@
 	<script src="DatePickerX-1.1.1/dist/js/DatePickerX.min.js"></script></head>
 	<link rel="stylesheet" href="style.css">
 <body>
-	<h1>Currículo</h1>
-	<form id="cv-form" method="get">
+    <header class="form-header">
+		<h1>Formulário para cadastro de currículo</h1>
+		<p>Preencha os campos abaixo.</p>
+	</header>
+	  <form id="cv-form" method="get">
 		<div class="linha-do-formulario">
-			<fieldset>
+			<fieldset class="form-group">
 				<legend>Primeiro fieldset</legend>
                 <div class="linha" class="input-group mb-3">
 					<label class="form-label" for="input-nome">Nome:</label>
@@ -63,10 +66,12 @@
 				</div>
 			-->
 			</fieldset>
-			<fieldset>
+			<fieldset class="form-group">
 				<legend>Segundo fieldset</legend>
 				<div class="linha" class="input-group mb-3">
-					<label class="form-label" for="ultimo-emprego"><div>Dados do último emprego:</div></label>
+					<div>
+						<label class="form-label" for="ultimo-emprego">Dados do último emprego:</label>
+					</div>
 					<textarea name="ultimo-emprego" id="ultimo-emprego" required cols="50" rows="20" maxlength="1000"></textarea>
 				</div>
 				<div class="linha" class="input-group mb-3">
