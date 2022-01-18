@@ -1,0 +1,5 @@
+Gabarito: https://app.betrybe.com/course/fundamentals/higher-order-functions-do-javascript-es6/javascript-es6-introducao-a-higher-order-functions-gabarito/solutions/bc8c308b-213f-484a-97ec-9b551170c458/conteudos/a147dc13-ec19-4f9d-845b-3381af148264?use_case=calendar
+
+Exercícios da explicação: https://app.betrybe.com/course/fundamentals/higher-order-functions-do-javascript-es6/javascript-es6-introducao-a-higher-order-functions/1f03dcec-91e1-411b-b296-820a8106e0ef/conteudos/7f21ddd0-8ecf-4dd1-9f07-39b712dd39f4/estruturando-uma-hof/2372c39a-72b2-4a55-b4f8-25f422d33d72?use_case=previous_button
+
+Exercícios do dia: https://app.betrybe.com/course/fundamentals/higher-order-functions-do-javascript-es6/javascript-es6-introducao-a-higher-order-functions/1f03dcec-91e1-411b-b296-820a8106e0ef/exercicios/a342e01c-4275-4286-a251-a64f4d2d6825?use_case=next_button
