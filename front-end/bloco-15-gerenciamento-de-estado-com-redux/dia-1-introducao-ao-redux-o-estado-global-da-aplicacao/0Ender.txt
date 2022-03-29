@@ -1,0 +1,5 @@
+https://app.betrybe.com/course/front-end/gerenciamento-de-estado-com-redux/introducao-ao-redux-o-estado-global-da-aplicacao/b316e3d4-5699-47b2-9f62-a221fc2041a8/vamos-praticar/98f44b07-9d9f-44a1-a905-6321e237a316/agora-a-pratica/1744f283-dc1c-4494-a4a3-adf5400bb3ff
+
+https://app.betrybe.com/course/front-end/gerenciamento-de-estado-com-redux/introducao-ao-redux/solutions/7d8fc01a-2613-45a7-89f0-9273cf0bee76/conteudo/e020e9cf-90b1-46f1-9b53-99a4d1bbee9c?use_case=calendar
+
+https://www.freecodecamp.org/learn/front-end-libraries/redux/define-an-action-creator
