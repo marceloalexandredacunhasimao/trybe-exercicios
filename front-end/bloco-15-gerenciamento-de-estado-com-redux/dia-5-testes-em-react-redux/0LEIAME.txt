@@ -1,0 +1,1 @@
+Fazer os exercícios no link: https://app.betrybe.com/course/front-end/gerenciamento-de-estado-com-redux/testes-em-react-redux/5fde499b-0761-44de-aea1-15b3846869f8/exercicios/bc8aba28-5211-4398-829c-6a7568984d66/agora-a-pratica/71626d34-14b8-4b2a-90c9-f287b0bf5e40?use_case=next_button
