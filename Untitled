@@ -1,0 +1,6 @@
+npx sequelize db:create
+npx sequelize db:migrate
+
+npx sequelize seed:generate --name books
+
+npx sequelize db:seed:all
