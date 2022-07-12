@@ -1,0 +1,8 @@
+npx sequelize db:create
+npx sequelize db:migrate
+npx sequelize db:seed:all
+
+
+Falta padronização na escrita do código, e isso confunde que está aprendendo. Tem hora que a foreignKey está em camelCase na implementação dos models mas nesta página de relação N:N a foreignKey do arquivo "models/UserBook.js" está em snakecase.
+Nas páginas anteriores estava escrito "return queryInterface.bulkDelete" e nessa "await queryInterface.bulkDelete" mesmo que esse código se referice sempre à função "down" do arquivo da seed. Se o comando usado para livros foi "npx sequelize seed:generate --name books" e
+o para pessoas usuários foi "npx sequelize seed:generate --name users" então o para criar a tabela de relação deveria ser "npx sequelize seed:generate --name users-books" com "users" no plural, não com "user" no singular como está na página.
