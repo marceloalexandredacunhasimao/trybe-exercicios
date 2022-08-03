@@ -1,0 +1,5 @@
+#https://app.betrybe.com/course/back-end/poo-solid/heranca-e-interfaces/6595099d-3727-465a-9cb4-1850f5785727/exercicios/90ec1a11-970d-49dc-81da-a3077e9f7706/agora-a-pratica/e079d731-d3fe-4b0c-83cf-3b951dc10642?use_case=next_button
+
+Importante: Devido a uma restrição em transpilar arquivos .ts para .js em versões posteriores ao ES5, utilize o seguinte comando para executar a transpilação corretamente:
+
+npx tsc -t es5 ./index.ts
